@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Seven Rays Limited</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
+
+    <!--Favicon-->
+    <link rel="shortcut icon" href="images/favicon.ico" title="Favicon"/>
+
+    <!-- Main CSS Files -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Reusing original template color CSS -->
+    <link rel="stylesheet" href="css/namari-color.css">
+
+    <!--Icon Fonts - Font Awesome Icons-->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+
+    <!-- Animate CSS-->
+    <link href="css/animate.css" rel="stylesheet" type="text/css">
+
+    <!--Google Webfonts (Poppins)-->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!--
+      NOTE: For Tan Pearl, you need to host or import its font files.
+      Example:
+
+      @font-face {
+        font-family: 'Tan Pearl';
+        src: url('fonts/TanPearl.woff2') format('woff2'),
+             url('fonts/TanPearl.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+      }
+
+      Then you can apply "font-family: 'Tan Pearl', serif;" where desired.
+    -->
+
+    <!-- Inline Custom Styles -->
+    <style>
+      /* Root variable for the main purple color */
+      :root {
+        --purple: #3C0D49;
+      }
+
+      /* Body and default text styling */
+      body {
+        font-family: 'Poppins', sans-serif;
+        color: #333;
+        margin: 0;
+        padding: 0;
+      }
+
+      /* Headers in Purple; allow for "Tan Pearl" if available */
+      h1, h2, h3, .section-heading h2, .section-heading h3 {
+        font-family: 'Tan Pearl', 'Poppins', sans-serif;
+        color: var(--purple);
+        margin-top: 0;
+      }
+
+      /* Remove the large background image from #banner */
+      /* The original template’s CSS will apply the default parallax / background styling */
+
+      /* Section headings with top margin for spacing */
+      .section-heading {
+        margin-bottom: 20px;
+      }
+
+      /* Example usage of an image on the side in "What We Do", etc. */
+      .section-image {
+        margin-top: 20px;
+      }
+      .section-image img {
+        width: 100%;
+        border-radius: 4px;
+      }
+
+      /* Footer with purple background and white text */
+      #landing-footer {
+        background-color: var(--purple);
+        color: #fff;
+        padding: 20px 0;
+      }
+      #landing-footer a {
+        color: #fff;
+      }
+      #landing-footer a:hover {
+        opacity: 0.8;
+      }
+      #landing-footer .social-icons i {
+        color: #fff;
+      }
+
+      /* Simple form styling */
+      form input, form textarea {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 12px;
+        border: 1px solid #ccc;
+        border-radius: 2px;
+      }
+      form button {
+        background-color: var(--purple);
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+        border-radius: 2px;
+      }
+      form button:hover {
+        background-color: #2B0736; /* Slightly darker purple */
+      }
+    </style>
+
+</head>
+<body>
+
+<!-- Preloader -->
+<div id="preloader">
+    <div id="status" class="la-ball-triangle-path">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</div>
+<!--End of Preloader-->
+
+<div class="page-border" data-wow-duration="0.7s" data-wow-delay="0.2s">
+    <div class="top-border wow fadeInDown animated"></div>
+    <div class="right-border wow fadeInRight animated"></div>
+    <div class="bottom-border wow fadeInUp animated"></div>
+    <div class="left-border wow fadeInLeft animated"></div>
+</div>
+
+<div id="wrapper">
+
+    <!-- Banner / Header -->
+    <!-- Removed the inline background image; letting the original template's CSS handle styling -->
+    <header id="banner" class="scrollto clearfix" data-enllax-ratio=".5">
+        <div id="header" class="nav-collapse">
+            <div class="row clearfix">
+                <div class="col-1">
+
+                    <!--Logo-->
+                    <div id="logo">
+                        <!--Banner Logo-->
+                        <img src="images/logo.png" id="banner-logo" alt="Seven Rays Limited"/>
+                        <!--Sticky Navigation Logo-->
+                        <img src="images/logo.png" id="navigation-logo" alt="Seven Rays Limited"/>
+                    </div>
+                    <!--End of Logo-->
+
+                    <aside>
+                        <!--Social Icons in Header-->
+                        <ul class="social-icons">
+                            <li>
+                                <a target="_blank" title="Facebook" href="https://www.facebook.com/username">
+                                    <i class="fa fa-facebook fa-1x"></i><span>Facebook</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a target="_blank" title="Google+" href="http://google.com/+username">
+                                    <i class="fa fa-google-plus fa-1x"></i><span>Google+</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a target="_blank" title="Twitter" href="http://www.twitter.com/username">
+                                    <i class="fa fa-twitter fa-1x"></i><span>Twitter</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a target="_blank" title="Instagram" href="http://www.instagram.com/username">
+                                    <i class="fa fa-instagram fa-1x"></i><span>Instagram</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a target="_blank" title="behance" href="http://www.behance.net">
+                                    <i class="fa fa-behance fa-1x"></i><span>Behance</span>
+                                </a>
+                            </li>
+                        </ul>
+                        <!--End of Social Icons in Header-->
+                    </aside>
+
+                    <!--Main Navigation-->
+                    <nav id="nav-main">
+                        <ul>
+                            <li><a href="#banner">Home</a></li>
+                            <li><a href="#about">What We Do</a></li>
+                            <li><a href="#how">How We Do It</a></li>
+                            <li><a href="#solutions">Our Solutions</a></li>
+                            <li><a href="#about-us">About Us</a></li>
+                            <li><a href="#contact">Get in Touch</a></li>
+                        </ul>
+                    </nav>
+                    <!--End of Main Navigation-->
+
+                    <div id="nav-trigger"><span></span></div>
+                    <nav id="nav-mobile"></nav>
+
+                </div>
+            </div>
+        </div><!--End of Header-->
+
+        <!--Banner Content-->
+        <div id="banner-content" class="row clearfix">
+            <div class="col-38">
+                <div class="section-heading">
+                    <h1>Seven Rays Limited</h1>
+                    <h2>Strategy – Advisory – Coaching</h2>
+                </div>
+            </div>
+        </div><!--End of Row-->
+    </header>
+
+    <!--Main Content Area-->
+    <main id="content">
+
+        <!-- What We Do -->
+        <section id="about" class="introduction scrollto">
+            <div class="row clearfix">
+                <div class="col-3">
+                    <div class="section-heading">
+                        <h3>WHAT WE DO</h3>
+                        <h2 class="section-title">Tailored Services</h2>
+                        <p class="section-subtitle">
+                            We offer tailored strategic and advisory services to help you navigate your business in
+                            today's rapidly evolving climate.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Text & Optional Image -->
+                <div class="col-2-3">
+                    <p>
+                        We understand that running a business offers great rewards although can be a challenging experience.
+                        Our aim is to make the experience easier for you. Our service gives the expertise, agility and quality
+                        customization with a personal touch.
+                    </p>
+                    <!-- Optional Illustrative Image -->
+                    <div class="section-image">
+                        <img src="images/gallery-images/gallery-image-1.jpg" alt="Business Solutions">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--End of What We Do-->
+
+        <!-- How We Do It -->
+        <section id="how" class="introduction scrollto">
+            <div class="row clearfix">
+                <div class="col-3">
+                    <div class="section-heading">
+                        <h3>HOW WE DO IT</h3>
+                        <h2 class="section-title">Strategies for Success</h2>
+                    </div>
+                </div>
+                <div class="col-2-3">
+                    <p>
+                        We work with you to develop, review and implement strategies for success including strategic goal
+                        setting, brand &amp; marketing, organizational and staff performance.
+                    </p>
+                    <p>
+                        We strive to identify core problems and provide simple yet effective solutions. Whether you are
+                        starting up or already established and need support to improve or overhaul, Seven Rays Limited
+                        will support you on your journey.
+                    </p>
+                    <!-- Optional Illustrative Image -->
+                    <div class="section-image">
+                        <img src="images/gallery-images/gallery-image-2.jpg" alt="Strategy Planning">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--End of How We Do It-->
+
+        <!-- Our Solutions -->
+        <section id="solutions" class="introduction scrollto">
+            <div class="row clearfix">
+                <div class="col-3">
+                    <div class="section-heading">
+                        <h3>OUR SOLUTIONS</h3>
+                        <h2 class="section-title">Focused on Your Needs</h2>
+                    </div>
+                </div>
+                <div class="col-2-3">
+                    <h4>Strategy</h4>
+                    <p>
+                        We co-create business strategy that solves your business problems and gives you immediate impact
+                        with long-term stacked wins.
+                    </p>
+
+                    <h4>Advisory</h4>
+                    <p>
+                        We work as your personal adviser throughout your journey to identify value and pursue worthwhile
+                        business opportunities.
+                    </p>
+
+                    <h4>Coaching</h4>
+                    <p>
+                        We provide executive professional coaching either one-on-one or with a team working through
+                        real-life business challenges, in a creative process that inspires them to maximize their potential.
+                    </p>
+
+                    <h4>Training</h4>
+                    <p>
+                        We provide staff training solutions to drive engagement and enhance performance with the use of
+                        scientific tools &amp; instruments. We also customize team building, workshop facilitation, and
+                        team strategy pathfinder activities.
+                    </p>
+
+                    <!-- Illustrative Image -->
+                    <div class="section-image">
+                        <img src="images/gallery-images/gallery-image-5.jpg" alt="Our Solutions">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--End of Our Solutions-->
+
+        <!-- About Us -->
+        <section id="about-us" class="introduction scrollto">
+            <div class="row clearfix">
+                <div class="col-3">
+                    <div class="section-heading">
+                        <h3>ABOUT US</h3>
+                        <h2 class="section-title">Meet Seven Rays Limited</h2>
+                    </div>
+                </div>
+                <div class="col-2-3">
+                    <p>
+                        We are a consortium of seasoned professionals with expertise in various fields to support your
+                        unique requirements.
+                    </p>
+                    <h4>Sheila Chimoli</h4>
+                    <p><strong>Founder and Lead Consultant, MBA, BA(IR), ACC, CPC</strong></p>
+                    <p>
+                        With a storied career spanning over two decades, Sheila's trajectory includes pivotal roles across
+                        banking, consumer lending &amp; micro-finance, telecommunications, and the NGO sector. Sheila is
+                        an Enterprise Business Agilist Strategist, ICAgile Certified Professional, and an accredited
+                        certified professional Coach, guiding clients through career transformations, work-life balance,
+                        and holistic health.
+                    </p>
+                    <!-- Original dancer.jpg from the template -->
+                    <div class="section-image">
+                        <img src="images/dancer.jpg" alt="Founder">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--End of About Us-->
+
+        <!-- Contact -->
+        <section id="contact" class="introduction scrollto">
+            <div class="row clearfix">
+                <div class="col-3">
+                    <div class="section-heading">
+                        <h3>GET IN TOUCH</h3>
+                        <h2 class="section-title">We'd Love to Hear From You</h2>
+                    </div>
+                </div>
+                <div class="col-2-3">
+                    <form>
+                        <p>Name:<br><input type="text" name="name" /></p>
+                        <p>Email:<br><input type="email" name="email" /></p>
+                        <p>Phone number:<br><input type="tel" name="phone" /></p>
+                        <p>Message:<br><textarea name="message"></textarea></p>
+                        <p><button type="submit">Submit</button></p>
+                    </form>
+                    <p>
+                        <strong>Email:</strong> info@sevenrayslimited.<br>
+                        <strong>Phone:</strong> +254-796-362-555
+                    </p>
+                </div>
+            </div>
+        </section>
+        <!--End of Contact-->
+
+    </main>
+    <!--End Main Content Area-->
+
+    <!--Footer-->
+    <footer id="landing-footer" class="clearfix">
+        <div class="row clearfix">
+            <p id="copyright" class="col-2">
+                Made with love for <a href="">SevenRays</a>
+            </p>
+
+            <!--Social Icons in Footer-->
+            <ul class="col-2 social-icons">
+                <li>
+                    <a target="_blank" title="Facebook" href="https://www.facebook.com/username">
+                        <i class="fa fa-facebook fa-1x"></i><span>Facebook</span>
+                    </a>
+                </li>
+                <li>
+                    <a target="_blank" title="Google+" href="http://google.com/+username">
+                        <i class="fa fa-google-plus fa-1x"></i><span>Google+</span>
+                    </a>
+                </li>
+                <li>
+                    <a target="_blank" title="Twitter" href="http://www.twitter.com/username">
+                        <i class="fa fa-twitter fa-1x"></i><span>Twitter</span>
+                    </a>
+                </li>
+                <li>
+                    <a target="_blank" title="Instagram" href="http://www.instagram.com/username">
+                        <i class="fa fa-instagram fa-1x"></i><span>Instagram</span>
+                    </a>
+                </li>
+                <li>
+                    <a target="_blank" title="behance" href="http://www.behance.net">
+                        <i class="fa fa-behance fa-1x"></i><span>Behance</span>
+                    </a>
+                </li>
+            </ul>
+            <!--End of Social Icons in Footer-->
+        </div>
+    </footer>
+    <!--End of Footer-->
+
+</div>
+
+<!-- Include JavaScript resources -->
+<script src="js/jquery.1.8.3.min.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/featherlight.min.js"></script>
+<script src="js/featherlight.gallery.min.js"></script>
+<script src="js/jquery.enllax.min.js"></script>
+<script src="js/jquery.scrollUp.min.js"></script>
+<script src="js/jquery.easing.min.js"></script>
+<script src="js/jquery.stickyNavbar.min.js"></script>
+<script src="js/jquery.waypoints.min.js"></script>
+<script src="js/images-loaded.min.js"></script>
+<script src="js/lightbox.min.js"></script>
+<script src="js/site.js"></script>
+
+</body>
+</html>
